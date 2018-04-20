@@ -4,6 +4,8 @@ win32/Debug/
 win32/Release/
 *.sdf
 *.VC.opendb
+*.suo
+*.vcxproj.user
 
 staticbuild/
 
