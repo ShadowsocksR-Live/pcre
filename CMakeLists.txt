@@ -84,11 +84,6 @@ FIND_PACKAGE( ZLIB )
 FIND_PACKAGE( Readline )
 FIND_PACKAGE( Editline )
 
-# FIND_PACKAGE( ZLIB )
-# include_directories(${ZLIB_INCLUDE_DIR})
-# OPTION(ZLIB_FOUND "ZLIB_FOUND" ON)
-# SET(ZLIB_LIBRARIES zlibstatic)
-
 # Configuration checks
 
 INCLUDE(CheckIncludeFile)
@@ -196,7 +191,7 @@ IF (MINGW)
 ENDIF(MINGW)
 
 IF(MSVC)
-  OPTION(PCRE_STATIC_RUNTIME OFF CACHE BOOL
+  OPTION(PCRE_STATIC_RUNTIME
 	"ON=Compile against the static runtime (/MT)."
 	OFF)
   OPTION(INSTALL_MSVC_PDB
