@@ -119,9 +119,9 @@ IF (MINGW)
 ENDIF(MINGW)
 
 IF(MSVC)
-  OPTION(PCRE_STATIC_RUNTIME OFF CACHE BOOL
-	"ON=Compile against the static runtime (/MT)."
-	OFF)
+  OPTION(PCRE_STATIC_RUNTIME
+        "ON=Compile against the static runtime (/MT)."
+        OFF)
   OPTION(INSTALL_MSVC_PDB
          "ON=Install .pdb files built by MSVC, if generated"
          OFF)
